@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>űrlap elemek</title>
+    
+</head>
+
+<body>
+    <div >
+       <h2> KÉRJÜK ÍRJA BE AZ ADTAIT</h2>
+    </div>
+    
+    
+    <fieldset>
+        <legend>Kérdőív</legend>
+        
+        Neme
+        <label><input type="radio" neme="gender" value="male">Férfi</label>
+        <label><input type="radio" neme="gender" value="female" checked>Nő</label>
+     
+     <label>
+         <br>
+            Életkor <sup>*</sup>
+            <select name="eletkor">
+                <option value="">--válassz--</option>
+            <option value="1" >1</option>
+            <option value="2" >2</option>
+            <option value="3" >3</option>
+              </select>
+        </label>
+        <label>
+            <br>lakóhely
+            <input type="text" name="user_id" value="Magyarország" readonly>
+        </label>
+        <br>
+            Iskolai végzettség
+            <select name="vegzettseg">
+                <option value="">--válassz--</option>
+            <option value="gimnázium" >gimnázium</option>
+            <option value="ovi" >ovi</option>
+            <option value="egyetem" >egyetem</option>
+            <option value="mester_diploma" >Mester diploma</option>
+              </select>
+        </label>
+    </label>
+    <br>
+        Foglalkozas
+        <select name="foglalkozas">
+            <option value="">--válassz--</option>
+        <option value="elado" >eladó</option>
+        <option value="tanar" >tanár</option>
+        <option value="naplopó" >naplopó</option>
+        <option value="grafikus" >grafikus</option>
+          </select>
+    </label>
+</fieldset>
+
+<fieldset>
+<label>
+    <div style="background-color: grey;">
+        <h2> Mennyi az ön havi bevétele?</h2>
+     </div>
+     
+    <input type="checkbox" name="terms" value="1" 
+    required>kevesebb mint 500 000ft
+    <br><input type="checkbox" name="terms" value="1" 
+    required>kevesebb mint 600 000ft
+    <br><input type="checkbox" name="terms" value="1" 
+    required>kevesebb mint 100 000ft
+    <br><input type="checkbox" name="terms" value="1" 
+    required> 0ft
+</label>
+
+<fieldset>
+    <label>
+        <div style="background-color: grey;">
+            <h2> Mi az ön fő bevételi forrása?</h2>
+         </div>
+         
+        <input type="checkbox" name="terms" value="1" 
+        required>alkalmi meló
+        <br><input type="checkbox" name="terms" value="1" 
+        required>rendszeres meló
+        <br><input type="checkbox" name="terms" value="1" 
+        required>vállalkozás
+        <br><input type="checkbox" name="terms" value="1" 
+        required> egyéb:<input type="text" name="user_id" value="" readonly>
+    </label>
+</fieldset>
+    
+
+    
+</body>
+</html>

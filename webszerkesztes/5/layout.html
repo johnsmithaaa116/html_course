@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reszponzív keretrendszer</title>
+    <style>
+        body {
+            margin: 0; /*a DOBOZ KIJÖN A SZÉLÉRE*/
+            
+            padding: 0;
+        }
+        div {
+            background: #eee;
+            border: 1px solid black;
+            min-height: 250px;
+            box-sizing: border-box;  /*a szélesség megadását ehez veszi --nincs felesleges GÖRDÍTŐ sáv a margin v mpadding miatt*/
+            
+        }
+        .wrapper {
+           max-width: 1200px;/*MAX witdth:1200----nem tolja szét a dobozt*/
+           background-color: khaki;
+           margin: 0 auto;/*ENNEK HAT KÖZÉPEN lesz-----ALUL-FELÜL 0 JOBBRA BALRA AUTO*/
+           padding: 0;
+       }
+    }
+        /*DESKTOP media query*/
+       @media screen and (min-width: 1200px){
+           .wrapper{
+               width:1200px; /*MAX witdth:1200----felesleges*/
+               background: orange;
+               margin: auto;
+               padding: 0 10px; /*A DOBOZ 1200PX MARAD DE JÖN A PADDING*/
+            }
+        }
+        /*TABLET media query*/
+        @media screen and (min-width: 640px) and (max-width:1199px){  
+           .wrapper{
+               width:640px;
+               background: lime;
+               margin:0 auto;
+               padding: 0 15px; /*A tabletre nagyobb padding kell*/
+            }
+        }
+        
+    </style>
+</head>
+<body>
+<div>
+    <div class="wrapper" >fejléc---külső doboz </div>
+</div>
+
+ <div class="wrapper">Ez valami tartalom</div> 
+  
+  <div>
+      <div class="wrapper">lábléc</div>
+  </div>
+</body>
+</html>

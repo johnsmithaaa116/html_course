@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>űrlapok</title>
+</head>
+<body>
+    
+</body>
+</html>
+<body>
+<h1>űrtlap elemek</h1>
+<section>
+    <h2>hírlevél űrlap</h2>
+    <form>
+        <label for="név">Név</label>
+        <input type="text" name="nev" value="" id="nev"
+        placeholder="Tesz Elek"><br>
+
+        <label>E-mai <sup>*</sup> 
+            <input type="text" name="nev" value="" >
+            placeholder="email@cim.hu" 
+            required>
+      </label>
+      <input type="hidden" name="rejtett_mezo" value="bármilyen ertek" >
+     <br>Ez a mező csak olvasható
+     <input type="text" name="user_id" value="2345" readonly>
+     <br>Ez a mező meg ki van kapcsolva:
+     <input type="text" name="kikapcsolt" value="valami" disabled>
+        <br><button>kérek hírlevelet</button>
+    </form>
+</section>
+<h2>Összetrett ű>lapok</h2>
+<form >
+    <fieldset>
+        <legend>Adatkör cím</legend>
+        <label>
+            név <sup>*</sup>
+            <input type="text" name="nev" value="" placeholder="john doe"
+            required>
+        </label>
+
+        <label>E-mai <sup>*</sup>
+            <input type="text" name="nev" value="" >
+            placeholder="email@cim.hu" 
+            required>
+      </label>
+</fieldset>
+<fieldset>
+    <legend>Kérdőív</legend>
+    <label>
+        érkezés dátuma
+        <input type="datetime-local" name="erekzes_datuma">
+    </label>
+    <label>Telefonszám <sup>*</sup>
+        <input type="tel" name="phone" placeholder="+123456789" required>
+    </label>
+    <label>
+        Szereted a mókusokat?
+        <input type="checkbox" name="loving_cats">
+    </label>
+    <label>
+        Hogy talált ránk? <sup>*</sup>
+        <select name="Hogy_talat_rank?">
+            <option value="">--válassz--</option>
+        <option value="épp erre járt" >épp erre jártam</option>
+        <option value="hallotta" >hallottam</option>
+        <option value="megálmodta" >megálmodtam</option>
+          </select>
+    </label>
+    Neme
+    <label><input type="radio" neme="gender" value="male">Férfi</label>
+    <label><input type="radio" neme="gender" value="female" checked>Nő</label>
+    <label><input type="radio" neme="gender" value="female" checked>egyébb</label>
+</fieldset>
+<label>
+    Értékelje szolgáltatásaink egy 100-as skálán
+    <input type="range" name="rating_of_service" min="0" max="100" value="80"
+    step="5">
+</label>
+<label>
+    Egyébb üzenet: <br>
+    <textarea name="uzenet" rows="5" cols="60" placeholder="ide írd az üzenetet min 20 karakterben.."></textarea>
+</label>
+<label>
+    fájl csatolása
+</label>
+ 
+<label>
+    <input type="checkbox" name="terms" value="1" 
+    required>Elolvastam és tudomásul vettem az <a href="#" target="_blank">adatkezelési tájékoztató</a> ban leírtakat!
+</label>
+    
+    <button>Elküld</button>
+</form>
+
+<h2></h2>
+    
+</body>
+</html>

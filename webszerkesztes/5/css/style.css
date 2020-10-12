@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: beige;
+}
+nav {
+    background: yellow;
+}
+ul {
+    list-style: none;
+}
+/*menüpontok rendezése- inlineblock*/
+nav a {
+color: mediumseagreen;
+}
+ul.mainmenu { 
+    overflow: hidden;
+/*overflow:hidden;túllógó elemek elrejtése, most azért hogy a felső és alsó margók látszódjanak*/
+}
+
+ul.mainmenu a {
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    display: block;
+    text-decoration: none;
+}
+ul.mainmenu li {
+padding: 5px;
+display: inline-block;/*egymás mellé kerülnek de lesz space a formázás miatt*/
+}
+ul.mainmenu a:hover { /*ul.mainmenu li:hover---doboz belseje is már züld ha rámerrgy*/
+    background:green;
+    color: yellow
+}
+/*media query bemutatása*/
+@media screen and (min-width:960px){
+   /*csak a 960px v nagyobb megjelenésénél érvényes szabályok akkor nari lesz*/ 
+   nav {
+       background: orange;
+   }
+}
+@media screen and (min-width:1200px){
+    nav {
+        background:lime;
+    }
+}
+@media screen and (min-width:1080px){
+    nav {
+        background:brown;
+    }
+}

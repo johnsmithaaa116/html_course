@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stílusok megadása</title>
+    <style>
+        /*css komment blokk*/
+        /*Tag típusú kiválasztó*/
+        /*class v osztály kiválasztó 
+        .osztály neve{
+            stílus}*/
+        /*ID típusú kiválasztó (egy lehet egy oldalon,leherősebb)*/
+        /*kiválsztók halmozhatóak kiv1,kiv2...{
+           stílus-neve:érték }*/
+          /* inline stílust írsz az elembe az a legerősebb
+          <div style="color: cornflowerblue">doboz 4</div> */
+
+
+        body{
+            margin: 0;
+            padding: 0;
+           background:ghostwhite /*leggyengébb "tag" a hieararchiában az inline felülírja (style4nél pl)*/
+        }
+        div{
+            background: goldenrod;
+        }
+        span {
+            background: gray;
+        }
+        .kiemelt {
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px 5px 0;
+            margin: 5px;
+            /*inline elem alapvetően baseline ra igazodik*/
+            background: yellow;
+        }
+
+        #doboz {
+            background: greenyellow;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid black;
+        }
+        #mainMenu {
+            color:blue;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div id="doboz">
+        <div>doboz 1</div>
+        <div class="kiemelt">doboz 2</div>
+        <div>doboz 3</div>
+        <div style="color: cornflowerblue">doboz 4</div>  
+        <div>doboz 5</div>
+    </div>
+    <div id="mainMenu">
+      <span>span1</span>
+      <span class="kiemelt">span2</span>
+      <span>span3</span>
+      <span class="kiemelt">span4</span>
+      <span>span5</span>
+    </div>
+
+    <style>
+        ul{
+            background: #abc123;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+        }
+    
+    li {
+        background:#fee;
+        color: deeppink;
+        list-style-type: none;
+        display: inline;
+    }
+
+     a{
+         color: darkgray;
+         text text-decoration: none;
+
+     }
+
+     span {
+         display: block;
+     }
+
+    </style>
+
+    <ul>
+    
+    <li><a href="#">menüpont1</a>
+    <li><a href="#">menüpont2</a>
+    <li><a href="#">menüpont3</a>
+    <li><a href="#">menüpont4</a>
+    
+    </ul>
+
+
+</body>
+</html>
